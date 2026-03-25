@@ -1,4 +1,4 @@
-# Bitácora Individual de Actividades Arquitectónicas
+# Bitácora Individual de Actividades Arquitectónicas Jan Muñoz
 
 **Proyecto:** ArquiXpress – Marketplace  
 

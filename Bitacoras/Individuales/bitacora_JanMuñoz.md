@@ -134,6 +134,6 @@ La construcción de diagramas dinámicos permite representar el comportamiento d
 - Mejora en la claridad y estandarización de la representación de procesos dentro del SAD.
 
 ### Observaciones
-Se recomienda mantener la consistencia en el nivel de detalle de los diagramas dinámicos y continuar con revisiones grupales periódicas, especialmente al integrar nuevos procesos o modificar flujos existentes, para garantizar la coherencia entre las distintas vistas arquitectónicas.
+Se recomienda una mejor organización de los diagramas y simplicidad para su entendimiento.
 
 ---

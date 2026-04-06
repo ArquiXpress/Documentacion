@@ -114,3 +114,26 @@ El análisis exhaustivo del documento SRS es fundamental dentro del proceso arqu
 Se recomienda realizar una sesión de revisión conjunta para unificar criterios sobre la interpretación de los requerimientos y asegurar la coherencia entre el documento SRS y los artefactos arquitectónicos en construcción, asignando tareas individuales para un desarrollo eficiente del documento.
 
 ---
+
+## Entrada 6
+
+- **Fecha:** Domingo 5 de abril de 2026  
+- **Persona involucrada:** Jan Marco Muñoz Pineda  
+- **Tipo de entrada:** Diseño de diagramas de procesos faltantes (C4 Dynamic)
+
+### Descripción de la actividad
+Durante esta sesión se diseñaron y documentaron cuatro diagramas dinámicos correspondientes a procesos críticos del sistema: búsqueda en hora pico, autenticación y autorización por roles, pago de campañas publicitarias y creación de campañas tipo “Black Friday”. Cada diagrama fue estructurado siguiendo el modelo C4, incluyendo la definición de contenedores, componentes y flujos detallados de interacción. Adicionalmente, se realizó una revisión grupal de los diagramas previamente elaborados de pago, búsqueda y autenticación/autorización, con el fin de validar su coherencia, completitud y alineación con los requisitos del sistema.
+
+### Justificación técnica
+La construcción de diagramas dinámicos permite representar el comportamiento del sistema en escenarios clave, facilitando la comprensión de la interacción entre componentes y la validación de atributos de calidad como rendimiento, seguridad y confiabilidad. En particular, estos diagramas permiten evidenciar cómo la arquitectura responde a situaciones críticas como alta concurrencia, control de acceso basado en roles e integración con servicios externos. La revisión grupal contribuye a asegurar consistencia arquitectónica y detectar posibles mejoras antes de la consolidación del documento SAD.
+
+### Resultados obtenidos
+- Elaboración de cuatro diagramas dinámicos alineados con los procesos críticos del sistema.
+- Definición clara de flujos de interacción entre frontend, backend, base de datos y servicios externos.
+- Validación grupal de diagramas de pago, búsqueda y autenticación/autorización.
+- Mejora en la claridad y estandarización de la representación de procesos dentro del SAD.
+
+### Observaciones
+Se recomienda una mejor organización de los diagramas y simplicidad para su entendimiento.
+
+---

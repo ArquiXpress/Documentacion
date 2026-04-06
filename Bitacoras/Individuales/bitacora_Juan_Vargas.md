@@ -122,3 +122,99 @@ Se incrementó la coherencia del documento arquitectónico.
 ## Observaciones 
 
 Esta actividad fortaleció el SAD como artefacto central del proyecto, proporcionando una base más clara y consistente para futuras etapas de desarrollo y discusión técnica.
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+
+## Entrada de bitácora 
+
+**Fecha:** Lunes 6 de abril de 2026  
+**Persona involucrada:** Juan Francisco Vargas  
+**Tipo de entrada:** Corrección de diagramas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se realizó una revisión detallada del documento SAD (Software Architecture Document) del proyecto ArquiXpress – Marketplace, con el fin de mejorar su claridad, consistencia y alineación con la arquitectura definida.  
+
+Se efectuaron correcciones en la introducción, así como en la visión general de los requisitos funcionales, reorganizando la información para lograr una mejor comprensión de las funcionalidades del sistema.  
+
+Adicionalmente, se revisó el modelo de dominio y la definición de sus entidades, realizando ajustes para asegurar coherencia con la lógica del negocio. Como complemento, se crearon tablas para describir de manera más detallada las entidades del modelo de dominio.  
+
+Finalmente, se corrigió el diagrama de contenedores, mejorando la representación de la estructura del sistema y la interacción entre sus componentes principales.  
+
+## Justificación técnica 
+
+La revisión del SAD responde a la necesidad de contar con un documento arquitectónico claro, consistente y alineado con las decisiones de diseño del sistema. La mejora de sus secciones permite reducir ambigüedades y facilitar la comunicación dentro del equipo.  
+
+Asimismo, los ajustes al modelo de dominio y al diagrama de contenedores fortalecen la comprensión tanto conceptual como estructural del sistema, lo que es clave para su implementación.  
+
+## Resultados obtenidos 
+
+Se corrigió la introducción del SAD.  
+
+Se ajustó la visión general de los requisitos funcionales.  
+
+Se revisó y corrigió el modelo de dominio.  
+
+Se mejoró la definición de las entidades del modelo.  
+
+Se crearon tablas para el modelo de dominio.  
+
+Se corrigió el diagrama de contenedores.  
+
+Se incrementó la coherencia del documento arquitectónico.  
+
+## Observaciones 
+
+Esta actividad fortaleció el SAD como artefacto central del proyecto, proporcionando una base más clara y consistente para futuras etapas de desarrollo y discusión técnica.
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+## Entrada de bitácora 
+
+**Fecha:** Lunes 6 de abril de 2026  
+**Persona involucrada:** Juan Francisco Vargas  
+**Tipo de entrada:** Corrección de diagramas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se realizó una revisión detallada del documento SAD (Software Architecture Document) del proyecto ArquiXpress – Marketplace, con el fin de mejorar su claridad, consistencia y alineación con la arquitectura definida.  
+
+Se efectuaron correcciones en la introducción, así como en la visión general de los requisitos funcionales, reorganizando la información para lograr una mejor comprensión de las funcionalidades del sistema.  
+
+Adicionalmente, se revisó el modelo de dominio y la definición de sus entidades, realizando ajustes para asegurar coherencia con la lógica del negocio. Como complemento, se crearon tablas para describir de manera más detallada las entidades del modelo de dominio.  
+
+Finalmente, se corrigió el diagrama de contenedores, mejorando la representación de la estructura del sistema y la interacción entre sus componentes principales.  
+
+## Justificación técnica 
+
+La revisión del SAD responde a la necesidad de contar con un documento arquitectónico claro, consistente y alineado con las decisiones de diseño del sistema. La mejora de sus secciones permite reducir ambigüedades y facilitar la comunicación dentro del equipo.  
+
+Asimismo, los ajustes al modelo de dominio y al diagrama de contenedores fortalecen la comprensión tanto conceptual como estructural del sistema, lo que es clave para su implementación.  
+
+## Resultados obtenidos 
+
+Se corrigió la introducción del SAD.  
+
+Se ajustó la visión general de los requisitos funcionales.  
+
+Se revisó y corrigió el modelo de dominio.  
+
+Se mejoró la definición de las entidades del modelo.  
+
+Se crearon tablas para el modelo de dominio.  
+
+Se corrigió el diagrama de contenedores.  
+
+Se incrementó la coherencia del documento arquitectónico.  
+
+## Observaciones 
+
+Esta actividad fortaleció el SAD como artefacto central del proyecto, proporcionando una base más clara y consistente para futuras etapas de desarrollo y discusión técnica.
+

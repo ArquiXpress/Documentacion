@@ -345,3 +345,181 @@ Revisión de avances y GitHub.
 #### Cambio organizacional
 
 Reunión → lunes 8:30 p.m.
+
+
+# Bitácora individual de actividades arquitectónicas 
+
+**Proyecto:** ArquiXpress – Marketplace 
+
+## Entrada de bitácora 
+
+**Fecha:** Jueves 5 de marzo de 2026  
+**Persona involucrada:** Todo el equipo  
+**Tipo de entrada:** Ajuste de diseño arquitectónico / Elaboración de diagrama de despliegue  
+
+## Descripción de la actividad 
+
+Durante esta jornada se realizaron correcciones a la vista de contenedores del proyecto ArquiXpress – Marketplace, con el propósito de mejorar la claridad en la representación de los principales componentes del sistema y su distribución por responsabilidades. Estos ajustes permitieron fortalecer la consistencia entre las distintas vistas arquitectónicas construidas hasta el momento.  
+
+Adicionalmente, se llevó a cabo la elaboración del diagrama de despliegue, incorporando la representación de los nodos físicos principales del sistema, los artefactos desplegados en cada entorno y la relación entre frontend, balanceador de carga, backend, base de datos y servicios externos. Este trabajo permitió ampliar la documentación arquitectónica del proyecto con una vista más cercana a la infraestructura de ejecución.  
+
+De manera paralela, el equipo inició el desarrollo del documento SRS, con el fin de formalizar los requisitos del sistema y mantener alineada la documentación funcional con la propuesta arquitectónica. También se reorganizaron tareas dentro de Trello para dar continuidad al trabajo de la siguiente fase del proyecto.  
+
+## Justificación técnica 
+
+La actualización de la vista de contenedores y la creación del diagrama de despliegue responden a la necesidad de refinar progresivamente la arquitectura del sistema a medida que se detallan mejor sus componentes y su infraestructura. Estas mejoras permiten representar con mayor precisión tanto la estructura lógica como la distribución física de la solución.  
+
+Asimismo, el inicio del SRS contribuye a fortalecer la trazabilidad entre requisitos y arquitectura, lo cual resulta fundamental para justificar las decisiones de diseño tomadas por el equipo.  
+
+## Resultados obtenidos 
+
+Se corrigió la vista de contenedores del sistema.  
+
+Se elaboró el diagrama de despliegue del proyecto.  
+
+Se inició el desarrollo del documento SRS.  
+
+Se reorganizaron tareas del equipo en Trello.  
+
+Se fortaleció la coherencia entre arquitectura y documentación funcional.  
+
+## Observaciones 
+
+Durante esta jornada se indicó como pendiente para la siguiente iteración la elaboración de una bitácora individual por integrante, con el fin de mejorar la trazabilidad del trabajo realizado dentro del proyecto.  
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+
+## Entrada de bitácora 
+
+**Fecha:** Martes 10 de marzo de 2026  
+**Persona involucrada:** Todo el equipo 
+**Tipo de entrada:** Revisión técnica / Análisis de decisiones tecnológicas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se recibió retroalimentación orientada a fortalecer la justificación de las decisiones tecnológicas adoptadas en la arquitectura del proyecto ArquiXpress – Marketplace. En particular, se señaló la necesidad de sustentar de manera más clara el uso de Angular como tecnología de frontend, explicando qué necesidades del sistema atiende y cómo contribuye al cumplimiento de los requisitos planteados.  
+
+Adicionalmente, surgió la discusión sobre la posibilidad de considerar una aplicación móvil como parte futura de la solución. Aunque esta alternativa aún no se encuentra definida, se identificó la importancia de dejar constancia de esta posible evolución tecnológica para futuras iteraciones.  
+
+También se sugirió incorporar comparaciones entre arquitecturas, con el fin de justificar de forma más sólida la selección de la propuesta actual frente a otras alternativas posibles. Este análisis comparativo permitiría fortalecer el sustento técnico del diseño arquitectónico adoptado por el equipo.  
+
+## Justificación técnica 
+
+Las observaciones realizadas durante esta revisión resaltan la importancia de no limitar la documentación arquitectónica a la descripción de componentes, sino de incluir también la justificación explícita de las decisiones tecnológicas. Esto resulta clave para demostrar que las elecciones realizadas responden a necesidades concretas del sistema y no únicamente a preferencias del equipo.  
+
+Asimismo, contemplar posibles evoluciones como una aplicación móvil y realizar comparaciones entre arquitecturas permite construir una visión más crítica, flexible y argumentada de la solución propuesta.  
+
+## Resultados obtenidos 
+
+Se identificó la necesidad de justificar el uso de Angular dentro de la arquitectura.  
+
+Se dejó abierta la discusión sobre una posible aplicación móvil.  
+
+Se reconoció la conveniencia de realizar comparaciones entre alternativas arquitectónicas.  
+
+Se fortaleció el análisis técnico de las decisiones del proyecto.  
+
+## Observaciones 
+
+Esta revisión permitió evidenciar que algunas decisiones tecnológicas ya adoptadas requerían una justificación más explícita dentro de la documentación, especialmente en relación con su aporte al cumplimiento de requisitos funcionales y no funcionales.  
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+
+## Entrada de bitácora 
+
+**Fecha:** Jueves 19 de marzo de 2026  
+**Persona involucrada:** Todo el equipo  
+**Tipo de entrada:** Revisión arquitectónica / Corrección de documentación y diagramas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se recibió retroalimentación detallada por parte del profesor Pavlich respecto a múltiples aspectos de la arquitectura y su documentación. A partir de esta revisión, se identificó la necesidad de realizar correcciones en la nomenclatura utilizada en algunos artefactos, ajustar la representación UML de los diagramas y documentar con mayor precisión los protocolos de comunicación entre los distintos componentes del sistema.  
+
+Dentro de las observaciones recibidas, se destacó la necesidad de justificar con mayor profundidad la arquitectura propuesta desde la perspectiva de rendimiento y escalabilidad. En particular, se sugirió analizar con mayor detalle la capacidad del sistema frente a carga esperada, la frecuencia de las peticiones más relevantes y la relación de estas consideraciones con los requisitos arquitectónicamente significativos.  
+
+También se discutieron alternativas relacionadas con la base de datos, como el uso de AWS Aurora, la diferenciación entre nodos de lectura y escritura y la cantidad de réplicas que podrían considerarse para soportar crecimiento futuro. De igual manera, se planteó la importancia de realizar pruebas de concepto y pruebas de carga que permitan validar de forma empírica las decisiones tomadas.  
+
+Finalmente, se propusieron mejoras en la organización de la documentación del proyecto, incluyendo la unificación de bitácoras en un solo sistema con hipervínculos, el uso de Markdown como formato estándar, la creación de una base de conocimiento y la apertura de repositorios específicos para documentación y pruebas de concepto.  
+
+## Justificación técnica 
+
+La retroalimentación recibida puso en evidencia la necesidad de fortalecer la arquitectura no solo a nivel de representación, sino también en términos de validación, justificación y trazabilidad. Corregir la notación UML y documentar los protocolos mejora la precisión de los diagramas, mientras que incorporar análisis de rendimiento y pruebas de concepto permite sustentar técnicamente que la solución propuesta puede responder a las necesidades del sistema.  
+
+Asimismo, una mejor organización de la documentación favorece el trabajo colaborativo, el control de versiones y la evolución ordenada de la arquitectura a lo largo del proyecto.  
+
+## Resultados obtenidos 
+
+Se identificaron correcciones necesarias en la nomenclatura y notación UML.  
+
+Se reconoció la necesidad de documentar protocolos de comunicación.  
+
+Se planteó la evaluación de alternativas de base de datos con lecturas y escrituras diferenciadas.  
+
+Se estableció la necesidad de realizar pruebas de concepto y de carga.  
+
+Se definieron mejoras en la organización de la documentación del proyecto.  
+
+## Observaciones 
+
+Esta jornada representó un punto de maduración importante para la arquitectura del sistema, ya que permitió pasar de una documentación principalmente descriptiva a una visión más crítica, justificada y validable de la solución propuesta.  
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+
+## Entrada de bitácora 
+
+**Fecha:** Sábado 4 de abril de 2026  
+**Persona involucrada:** Todo el equipo  
+**Tipo de entrada:** Corrección de SAD y diagramas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se realizó una revisión detallada del documento SAD (Software Architecture Document) del proyecto ArquiXpress – Marketplace, con el fin de mejorar su claridad, consistencia y alineación con la arquitectura definida.  
+
+Se efectuaron correcciones en la introducción, así como en la visión general de los requisitos funcionales, reorganizando la información para lograr una mejor comprensión de las funcionalidades del sistema.  
+
+Adicionalmente, se revisó el modelo de dominio y la definición de sus entidades, realizando ajustes para asegurar coherencia con la lógica del negocio. Como complemento, se crearon tablas para describir de manera más detallada las entidades del modelo de dominio.  
+
+Finalmente, se corrigió el diagrama de contenedores, mejorando la representación de la estructura del sistema y la interacción entre sus componentes principales.  
+
+## Justificación técnica 
+
+La revisión del SAD responde a la necesidad de contar con un documento arquitectónico claro, consistente y alineado con las decisiones de diseño del sistema. La mejora de sus secciones permite reducir ambigüedades y facilitar la comunicación dentro del equipo.  
+
+Asimismo, los ajustes al modelo de dominio y al diagrama de contenedores fortalecen la comprensión tanto conceptual como estructural del sistema, lo que es clave para su implementación.  
+
+## Resultados obtenidos 
+
+Se corrigió la introducción del SAD.  
+
+Se ajustó la visión general de los requisitos funcionales.  
+
+Se revisó y corrigió el modelo de dominio.  
+
+Se mejoró la definición de las entidades del modelo.  
+
+Se crearon tablas para el modelo de dominio.  
+
+Se corrigió el diagrama de contenedores.  
+
+Se incrementó la coherencia del documento arquitectónico.  
+
+## Observaciones 
+
+Esta actividad fortaleció el SAD como artefacto central del proyecto, proporcionando una base más clara y consistente para futuras etapas de desarrollo y discusión técnica.
+
+

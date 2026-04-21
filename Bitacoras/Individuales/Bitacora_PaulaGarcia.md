@@ -34,7 +34,7 @@ Inicialmente existió confusión sobre qué elementos eran internos o externos.
 Se desarrolló el diagrama de contenedores del sistema, incluyendo frontend (Angular), backend (Spring Boot) y base de datos, además de load balancer y replicación.
 
 ### Justificación técnica
-Permite dividir el sistema en partes independientes y mejorar escalabilidad.
+Permite dividir el sistema en partes independientes, entender la comunicación entre componentes y mejorar la escalabilidad.
 
 ### Resultados obtenidos
 - Definición de arquitectura en capas.
@@ -42,7 +42,7 @@ Permite dividir el sistema en partes independientes y mejorar escalabilidad.
 - Uso de base de datos con réplica.
 
 ### Observaciones
-Se comprendió mejor el flujo frontend → backend → base de datos.
+Se comprendió mejor el flujo general del sistema: usuario → frontend → backend → base de datos y servicios externos.
 
 ---
 
@@ -52,13 +52,13 @@ Se comprendió mejor el flujo frontend → backend → base de datos.
 - **Tipo de entrada:** Atributos de calidad  
 
 ### Descripción de la actividad
-Se analizaron atributos como performance, disponibilidad y deployability.
+Se analizaron atributos como performance, disponibilidad y deployability, relacionándolos con decisiones arquitectónicas como balanceo de carga y replicación.
 
 ### Justificación técnica
-Permiten tomar decisiones de arquitectura correctas.
+Permiten tomar decisiones de arquitectura correctas para garantizar que el sistema funcione de manera eficiente bajo diferentes condiciones.
 
 ### Resultados obtenidos
-- Uso de múltiples backends.
+- Uso de múltiples instancias de backend.
 - Balanceo de carga.
 - Replicación de base de datos.
 
@@ -76,7 +76,7 @@ Al inicio hubo confusión, pero luego se entendió la relación entre arquitectu
 Se subió la bitácora en formato Markdown al repositorio del proyecto.
 
 ### Justificación técnica
-Permite control de versiones y trabajo colaborativo.
+Permite control de versiones y trabajo colaborativo entre los integrantes del equipo.
 
 ### Resultados obtenidos
 - Archivo creado correctamente.
@@ -84,3 +84,25 @@ Permite control de versiones y trabajo colaborativo.
 
 ### Observaciones
 Se aprendió el uso básico de GitHub.
+
+---
+
+## Entrada 5
+
+- **Fecha:** Abril 2026  
+- **Tipo de entrada:** Modelado de casos de uso y diagramas de flujo  
+
+### Descripción de la actividad
+Se desarrollaron los diagramas de flujo correspondientes a los casos de uso del sistema, representando los procesos principales para los diferentes actores: comprador, vendedor y administrador. Se modelaron flujos como el proceso de checkout, la gestión de productos, la publicación de productos, la gestión de campañas, la moderación de publicaciones y la consulta de pedidos y notificaciones.
+
+### Justificación técnica
+Los diagramas de flujo permiten representar el comportamiento del sistema de manera clara, mostrando paso a paso la lógica de los procesos, incluyendo decisiones, validaciones y posibles escenarios alternativos.
+
+### Resultados obtenidos
+- Modelado de múltiples casos de uso del sistema.
+- Representación de flujos con decisiones (pagos exitosos, pendientes o rechazados).
+- Integración de diferentes actores dentro de los procesos.
+- Mejor comprensión de la lógica del sistema.
+
+### Observaciones
+Inicialmente hubo dificultad para estructurar los flujos y sus decisiones, pero posteriormente se logró entender cómo representar la lógica del sistema de forma clara y completa.

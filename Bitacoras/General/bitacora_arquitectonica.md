@@ -523,3 +523,79 @@ Se incrementó la coherencia del documento arquitectónico.
 Esta actividad fortaleció el SAD como artefacto central del proyecto, proporcionando una base más clara y consistente para futuras etapas de desarrollo y discusión técnica.
 
 
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+## Entrada de bitácora 
+
+**Fecha:** jueves 16 de abril de 2026  
+**Persona involucrada:** Todo el equipo  
+**Tipo de entrada:** Seguimiento de proyecto / Alineación de equipo  
+
+## Descripción de la actividad 
+
+Durante esta jornada el equipo realizó una reunión de seguimiento con el propósito de alinear las correcciones y ajustes necesarios sobre la entrega del proyecto ArquiXpress – Marketplace. En este espacio se revisaron de manera general los comentarios y observaciones identificados sobre el trabajo desarrollado hasta el momento, con el fin de establecer cuáles aspectos debían fortalecerse tanto en la documentación como en la justificación técnica de la arquitectura propuesta.  
+
+Asimismo, se discutió la mejor manera de organizar las actividades pendientes del equipo, distribuyendo cargas y responsabilidades de acuerdo con los componentes y apartados que cada integrante podía abordar con mayor claridad. Esta alineación permitió definir una ruta de trabajo más ordenada para continuar con las mejoras del proyecto, evitando duplicidad de esfuerzos y facilitando la continuidad del proceso.  
+
+## Justificación técnica 
+
+Las reuniones de alineación y distribución de cargas son importantes en proyectos colaborativos, ya que permiten responder de forma organizada a las observaciones realizadas sobre una entrega y facilitan que los ajustes posteriores se desarrollen con mayor coherencia. Además, este tipo de actividad fortalece la coordinación del equipo y contribuye a mantener consistencia entre las distintas partes del proyecto.  
+
+## Resultados obtenidos 
+
+Se revisaron de manera general las correcciones y ajustes pendientes sobre la entrega.  
+Se identificaron aspectos que requerían fortalecimiento en la documentación y en la justificación arquitectónica.  
+Se distribuyeron responsabilidades y cargas de trabajo entre los integrantes del equipo.  
+Se definió una ruta de trabajo para abordar las mejoras del proyecto en las siguientes jornadas.  
+
+## Observaciones 
+
+La jornada permitió alinear al equipo frente a las correcciones necesarias y organizar de manera más clara la continuación del proyecto, dejando una base de trabajo más estructurada para las siguientes actividades.
+
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+## Entrada de bitácora 
+
+**Fecha:** Martes 21 de abril de 2026  
+**Persona involucrada:** Todo el equipo  
+**Tipo de entrada:** Revisión técnica / Validación arquitectónica mediante pruebas automáticas  
+
+## Descripción de la actividad 
+
+Durante esta jornada se recibió retroalimentación del profesor orientada a fortalecer la etapa de validación de la arquitectura del proyecto ArquiXpress – Marketplace. En particular, se indicó la necesidad de diseñar e implementar pruebas automáticas de integración que permitieran evaluar tanto requisitos funcionales como requisitos no funcionales del sistema.  
+
+A partir de esta orientación, el equipo identificó que las pruebas no debían limitarse únicamente a verificar el correcto funcionamiento de módulos aislados, sino que también debían servir como mecanismo de evidencia para demostrar que las decisiones arquitectónicas adoptadas han sido apropiadas frente a las necesidades del sistema. En este sentido, se enfatizó la importancia de aislar aquello que ya funciona correctamente, de modo que pueda validarse formalmente y utilizarse como soporte del diseño propuesto.  
+
+Asimismo, se reconoció como pendiente prioritario la definición y ejecución de pruebas asociadas a requisitos no funcionales, especialmente aquellas relacionadas con atributos de calidad como rendimiento, mantenibilidad y comportamiento bajo integración entre componentes. Finalmente, se estableció la necesidad de actualizar las bitácoras individuales para reflejar estas nuevas actividades de validación y su aporte a la justificación de la arquitectura.  
+
+## Justificación técnica 
+
+La incorporación de pruebas automáticas de integración permite validar el comportamiento conjunto de los componentes principales del sistema, superando una verificación puramente teórica o documental de la arquitectura. Esto resulta fundamental para demostrar que las decisiones de diseño adoptadas no solo son conceptualmente correctas, sino también efectivas en la práctica frente a los requisitos funcionales y no funcionales del proyecto.  
+
+Adicionalmente, orientar las pruebas hacia la validación de atributos de calidad fortalece la trazabilidad entre requisitos, decisiones arquitectónicas y evidencia empírica. De esta forma, la arquitectura deja de ser únicamente una propuesta de diseño y pasa a estar respaldada por resultados observables y repetibles.  
+
+## Resultados obtenidos 
+
+Se definió la necesidad de implementar pruebas automáticas de integración.  
+Se estableció que las pruebas deben cubrir tanto requisitos funcionales como no funcionales.  
+Se identificó que las pruebas deben servir como evidencia de la validez de las decisiones arquitectónicas tomadas.  
+Se reconoció la importancia de aislar y documentar los componentes y flujos que ya funcionan correctamente.  
+Se priorizó la actualización de las bitácoras individuales en función de estas actividades de validación.  
+
+## Observaciones 
+
+Esta jornada marcó una transición importante en el proyecto, al mover el foco desde la definición y documentación de la arquitectura hacia su validación práctica. La retroalimentación recibida refuerza la necesidad de sustentar las decisiones arquitectónicas mediante pruebas concretas, lo cual aporta mayor solidez técnica y académica al desarrollo del sistema.

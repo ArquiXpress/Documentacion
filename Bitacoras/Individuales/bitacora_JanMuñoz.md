@@ -137,3 +137,25 @@ La construcción de diagramas dinámicos permite representar el comportamiento d
 Se recomienda una mejor organización de los diagramas y simplicidad para su entendimiento.
 
 ---
+
+## Entrada 7
+
+- **Fecha:** Lunes 27 de abril de 2026
+- **Persona involucrada:** Jan Marco Muñoz Pineda
+- **Tipo de entrada:** Conversión de diagramas de actividad a diagramas de secuencia
+
+### Descripción de la actividad
+Durante los últimos días se trabajó en la conversión de los diagramas de actividad existentes a diagramas de secuencia utilizando la notación Mermaid. Este proceso implicó revisar cada uno de los flujos documentados previamente —incluyendo pagos, autenticación, búsqueda en hora pico, publicidad, promociones, reintento de pagos, estado de pedido y actualización de stock— y reexpresarlos en un formato que evidencia de manera más explícita la interacción temporal entre los componentes del sistema. Adicionalmente, se realizó el cambio del motor de base de datos de MySQL a PostgreSQL en todos los diagramas.
+
+### Justificación técnica
+Los diagramas de secuencia ofrecen una representación más precisa de la comunicación entre componentes en un orden temporal definido, lo que facilita la comprensión de los flujos por parte de todos los miembros del equipo y mejora la trazabilidad entre la arquitectura y los requerimientos. Este tipo de diagrama es más adecuado para documentar interacciones dentro de una vista de procesos en el modelo C4, ya que permite visualizar con claridad el intercambio de mensajes, las responsabilidades de cada componente y las dependencias entre capas.
+
+### Resultados obtenidos
+- Nueve diagramas de secuencia generados en formato Mermaid, listos para integrarse al documento SAD.
+- Reemplazo de MySQL por PostgreSQL como motor de base de datos reflejado en todos los diagramas.
+- Mayor claridad y legibilidad en la representación de los procesos críticos del sistema.
+
+### Observaciones
+Se integraran en el documento SAD.
+
+---

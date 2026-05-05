@@ -102,4 +102,36 @@ Se realizó la mejora y restructuración de la bitácora individual, pasando de 
 - Documento listo para publicación en GitHub.  
 
 ### Observaciones  
-Se recomienda mantener este formato en futuras actualizaciones para asegurar consistencia y calidad en la documentación.  
+Se recomienda mantener este formato en futuras actualizaciones para asegurar consistencia y calidad en la documentación. 
+
+---
+
+## Entrada 6
+
+- **Fecha:** Martes 5 de mayo de 2026
+- **Tipo de entrada:** Implementación del módulo de notificaciones por correo electrónico
+
+### Descripción de la actividad
+Se implementó el sistema de notificaciones por correo electrónico para el marketplace ArquiXpress, utilizando Resend como proveedor de envío. El desarrollo se realizó sobre la rama `andres-notificaciones` e integra el patrón Outbox ya existente en el proyecto para garantizar consistencia entre la base de datos y el envío de emails.
+
+### Justificación técnica
+Las notificaciones por correo son un componente clave en la experiencia del usuario dentro de un marketplace, ya que mantienen al comprador y vendedor informados sobre el estado de sus transacciones. Se eligió Resend por su facilidad de integración con Java, su API simple y su capa gratuita suficiente para el alcance del proyecto.
+
+### Resultados obtenidos
+- Nuevo servicio `EmailService.java` con plantillas HTML para cada tipo de notificación.
+- Modificación de `NotificationPublisher.java` para enrutar eventos del outbox al servicio de email.
+- Modificación de `AuthService.java` para registrar eventos de creación de cuenta y cambio de contraseña.
+- Modificación de `CheckoutService.java` para registrar eventos de actualización y entrega de envío.
+- Integración con `application.yml` y `docker-compose.yml` para configuración por variables de entorno.
+- Siete tipos de notificación implementados:
+  - Registro de cuenta
+  - Orden pagada
+  - Pago rechazado
+  - Actualización del estado del envío
+  - Envío entregado
+  - Orden cancelada
+  - Cambio de contraseña
+
+### Observaciones
+- La notificación de stock bajo (20% del stock tras cada restock) quedó identificada y documentada como pendiente, ya que requiere modificar la tabla de productos en coordinación con el resto del equipo.
+- El dominio `arquixpress.com` requiere verificación en Resend para poder usar `noreply@arquixpress.com` como remitente oficial en producción. Por ahora se utiliza `onboarding@resend.dev` para pruebas.

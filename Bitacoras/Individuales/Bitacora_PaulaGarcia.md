@@ -106,3 +106,134 @@ Los diagramas de flujo permiten representar el comportamiento del sistema de man
 
 ### Observaciones
 Inicialmente hubo dificultad para estructurar los flujos y sus decisiones, pero posteriormente se logró entender cómo representar la lógica del sistema de forma clara y completa.
+
+---
+
+## Entrada 6
+
+- **Fecha:** Abril 2026  
+- **Tipo de entrada:** Configuración del entorno de desarrollo local  
+
+### Descripción de la actividad
+Se realizó la descarga y configuración local del proyecto de prueba de concepto de ArquiXpress. Se instaló y ejecutó Docker Desktop para levantar los contenedores necesarios del sistema, incluyendo backend, base de datos PostgreSQL y servicios relacionados. También se revisó la estructura general del repositorio para identificar las carpetas principales del frontend, backend, documentación y configuración.
+
+### Justificación técnica
+La configuración del entorno local permite validar el funcionamiento real del sistema antes de realizar cambios sobre el código. Además, facilita la ejecución de pruebas sin afectar la rama principal del repositorio.
+
+### Resultados obtenidos
+- Proyecto ejecutado localmente mediante Docker.
+- Validación del backend en el puerto 8080.
+- Identificación de la estructura del repositorio.
+- Reconocimiento de los módulos principales del sistema.
+
+### Observaciones
+Inicialmente se presentaron errores relacionados con permisos de archivos y contenedores existentes, los cuales fueron corregidos para permitir la ejecución del sistema.
+
+---
+
+## Entrada 7
+
+- **Fecha:** Abril 2026  
+- **Tipo de entrada:** Uso de ramas en GitHub  
+
+### Descripción de la actividad
+Se creó una rama individual llamada `paula` para trabajar de forma independiente sin afectar la rama principal del proyecto. Esta rama permitió realizar cambios locales, probarlos y posteriormente subirlos al repositorio para revisión del equipo.
+
+### Justificación técnica
+El uso de ramas permite mantener aislados los cambios individuales, evitando modificaciones directas sobre `main`. Esto reduce el riesgo de afectar el trabajo del equipo y permite revisar los cambios antes de integrarlos.
+
+### Resultados obtenidos
+- Creación de la rama `paula`.
+- Subida de cambios iniciales al repositorio remoto.
+- Separación del trabajo individual respecto a la rama principal.
+
+### Observaciones
+Se comprendió la diferencia entre trabajar localmente, hacer commit, hacer push y modificar la rama principal.
+
+---
+
+## Entrada 8
+
+- **Fecha:** Mayo 2026  
+- **Tipo de entrada:** Revisión del frontend Angular  
+
+### Descripción de la actividad
+Se identificó que el proyecto contaba con un frontend Angular independiente ubicado en la carpeta `frontend`. Se ejecutó el frontend localmente y se revisó la interfaz principal del marketplace, incluyendo la navegación, el catálogo, el carrito, favoritos y las vistas asociadas a los perfiles de usuario.
+
+### Justificación técnica
+La revisión del frontend permitió identificar que la interfaz principal del sistema no correspondía únicamente a los archivos estáticos del backend, sino a una aplicación Angular separada. Esto fue importante para trabajar sobre la interfaz correcta.
+
+### Resultados obtenidos
+- Identificación del frontend real del sistema.
+- Ejecución del frontend en entorno local.
+- Revisión de la navegación entre inicio, tienda y carrito.
+- Validación visual de la estructura de la interfaz.
+
+### Observaciones
+Inicialmente se estaban revisando archivos estáticos del backend, pero posteriormente se identificó que el frontend principal estaba en Angular.
+
+---
+
+## Entrada 9
+
+- **Fecha:** Mayo 2026  
+- **Tipo de entrada:** Integración frontend-backend  
+
+### Descripción de la actividad
+Se revisó la comunicación entre el frontend Angular y el backend del sistema. Se identificaron problemas de conexión relacionados con la configuración del proxy y el acceso a los endpoints del backend, especialmente para la carga del catálogo de productos.
+
+### Justificación técnica
+La correcta integración entre frontend y backend es necesaria para que la interfaz pueda consumir los datos reales del sistema, como productos, carrito, favoritos e información del checkout.
+
+### Resultados obtenidos
+- Verificación del endpoint `/api/products`.
+- Identificación de errores de conexión entre Angular y backend.
+- Revisión de la configuración del proxy.
+- Validación de que el backend respondía correctamente desde el puerto 8080.
+
+### Observaciones
+Se evidenció la importancia de configurar correctamente la comunicación entre componentes para que el frontend pueda consumir la API del backend.
+
+---
+
+## Entrada 10
+
+- **Fecha:** Mayo 2026  
+- **Tipo de entrada:** Implementación y mejora del flujo de checkout  
+
+### Descripción de la actividad
+Se trabajó en la mejora del flujo de checkout del marketplace, enfocándose en que el proceso de compra mostrara información relevante para el usuario y para el sistema. Se consideraron elementos como método de pago, identificador de orden, productos incluidos e identificador de transacción.
+
+### Justificación técnica
+El checkout es uno de los procesos principales del marketplace, ya que conecta catálogo, carrito, pedidos y pago simulado. Mejorar este flujo permite representar de manera más clara el proceso de compra y validar la consistencia de la operación.
+
+### Resultados obtenidos
+- Revisión del flujo de checkout existente.
+- Definición de los datos necesarios para la confirmación de compra.
+- Inclusión conceptual de método de pago, ID de orden, productos e ID de transacción.
+- Mejora de la presentación del resultado del pago para evitar mostrar información técnica innecesaria al usuario.
+
+### Observaciones
+El pago se mantiene como una simulación, de acuerdo con el alcance del proyecto, evitando la integración con una pasarela de pagos real.
+
+---
+
+## Entrada 11
+
+- **Fecha:** Mayo 2026  
+- **Tipo de entrada:** Mejora de experiencia de usuario  
+
+### Descripción de la actividad
+Se revisó la interfaz del marketplace con el objetivo de mejorar su distribución visual y hacerla más cercana a una plataforma real de comercio electrónico. Se analizaron referencias como Mercado Libre y Amazon para organizar mejor la navegación, las categorías, los productos destacados, el carrito y la sección de compras.
+
+### Justificación técnica
+Una interfaz clara mejora la usabilidad del sistema, facilita la navegación del usuario y reduce errores durante procesos importantes como búsqueda, selección de productos y checkout.
+
+### Resultados obtenidos
+- Revisión de la distribución visual del marketplace.
+- Identificación de problemas de usabilidad en la interfaz.
+- Propuesta de organización por secciones: inicio, tienda, catálogo, carrito y checkout.
+- Mejora conceptual del flujo visual de compra.
+
+### Observaciones
+Se concluyó que la interfaz no solo debía ser funcional, sino también clara, intuitiva y coherente con el comportamiento esperado de un marketplace real.

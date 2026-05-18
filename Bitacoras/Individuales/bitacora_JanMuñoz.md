@@ -1,4 +1,4 @@
-# Bitácora Individual de Actividades Arquitectónicas Jan Muñoz
+# Bitácora Individual de Actividades Arquitectónicas Jan Marco Muñoz
 
 **Proyecto:** ArquiXpress – Marketplace  
 
@@ -159,3 +159,45 @@ Los diagramas de secuencia ofrecen una representación más precisa de la comuni
 Se integraran en el documento SAD.
 
 ---
+
+## Entrada 8
+
+- **Fecha:** Miércoles 14 de mayo de 2026
+- **Persona involucrada:** Jan Marco Muñoz Pineda
+- **Tipo de entrada:** Integración de diagramas de secuencia al documento SAD
+
+### Descripción de la actividad
+Durante esta sesión se realizó la integración formal de los diagramas de secuencia previamente elaborados al documento SAD del proyecto. Se revisó la ubicación y organización de cada diagrama dentro del documento, asegurando su correcta referenciación y coherencia con el contenido arquitectónico ya documentado.
+
+### Justificación técnica
+La integración de los diagramas al documento SAD es un paso necesario para consolidar la documentación arquitectónica del sistema, garantizando que los artefactos generados durante las sesiones de diseño queden formalmente registrados y disponibles para todos los miembros del equipo y demás interesados del proyecto.
+
+### Resultados obtenidos
+- Diagramas de secuencia integrados y referenciados correctamente dentro del documento SAD.
+- Documento SAD actualizado con la vista de procesos completa.
+- Mayor coherencia y completitud en la documentación arquitectónica del proyecto.
+
+### Observaciones
+Se recomienda continuar actualizando el documento SAD a medida que se generen nuevos artefactos en las iteraciones siguientes.
+
+---
+
+## Entrada 9
+
+- **Fecha:** Jueves 15 de mayo de 2026
+- **Persona involucrada:** Jan Marco Muñoz Pineda
+- **Tipo de entrada:** Modificación de la sección de restricciones técnicas del documento SAD
+
+### Descripción de la actividad
+Durante esta sesión se realizó una revisión y reestructuración de la sección de restricciones técnicas del documento SAD. Se identificó que dicha sección contenía decisiones arquitectónicas que no correspondían a ese apartado, por lo que fueron eliminadas y reubicadas donde corresponde. La sección quedó enfocada exclusivamente en restricciones del sistema, dotando de mayor precisión y sentido a las limitaciones técnicas, organizacionales y de negocio que condicionan el desarrollo del proyecto.
+
+### Justificación técnica
+Las restricciones técnicas y las decisiones arquitectónicas son conceptos distintos dentro de la documentación de arquitectura de software. Mezclarlos en una misma sección genera ambigüedad y dificulta la trazabilidad entre los condicionantes del sistema y las decisiones de diseño tomadas. Mantener esta separación mejora la claridad del documento y facilita su comprensión por parte de todos los involucrados.
+
+### Resultados obtenidos
+- Sección de restricciones técnicas depurada, eliminando decisiones arquitectónicas que no correspondían a este apartado.
+- Restricciones redactadas con mayor precisión y coherencia, reflejando únicamente limitaciones reales del sistema.
+- Documento SAD con una estructura más clara y alineada con los estándares de documentación arquitectónica.
+
+### Observaciones
+Se recomienda revisar las demás secciones del documento para asegurar que cada artefacto esté ubicado en el apartado que le corresponde, evitando mezclas conceptuales que puedan afectar la calidad de la documentación.

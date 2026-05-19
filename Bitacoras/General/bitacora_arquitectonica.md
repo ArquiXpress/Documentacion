@@ -671,3 +671,55 @@ Se recomienda complementar estas pruebas unitarias con pruebas de integración e
 módulos y pruebas de concurrencia, especialmente para los escenarios de sobreventa y
 doble cobro identificados como riesgos técnicos de alta prioridad en la sección 14 del
 SAD.
+
+
+## Entrada de bitácora
+
+Fecha: Martes 19 de mayo de 2026
+Persona involucrada: Todo el equipo
+Tipo de entrada: Implementación de pruebas unitarias e implementación funcional de soporte
+
+## Descripción de la actividad
+
+Durante esta jornada se implementaron pruebas unitarias para los requisitos funcionales RF-31, RF-32, RF-33, RF-34, RF-36, RF-39, RF-40, RF-41 y RF-42.
+
+Las pruebas se organizaron por requisito funcional, manteniendo archivos separados para facilitar su revisión y trazabilidad:
+
+RF-31: finalizar automáticamente campañas al cumplirse la fecha de vencimiento.
+RF-32: registrar y mostrar métricas básicas de campaña, como impresiones y clics.
+RF-33: permitir al administrador bloquear, suspender y reactivar usuarios.
+RF-34: permitir al administrador moderar publicaciones de productos.
+RF-36: permitir cancelar pedidos antes de su despacho.
+RF-39: consultar el estado del pago con la pasarela en caso de inconsistencias.
+RF-40: notificar eventos relevantes al usuario.
+RF-41: permitir al vendedor consultar pedidos asociados a sus productos.
+RF-42: permitir seleccionar una dirección de entrega registrada durante el checkout.
+Para cumplir estos requisitos fue necesario agregar implementación de soporte en módulos como promociones, administración, catálogo, pedidos, pagos, notificaciones y direcciones de entrega.
+
+## Justificación técnica
+
+La implementación se realizó siguiendo la estructura modular del monolito definido para ArquiXpress. Cada requisito fue cubierto mediante pruebas unitarias enfocadas en validar reglas de negocio aisladas, sin depender directamente de la base de datos ni del levantamiento completo de la aplicación.
+
+Se agregaron comportamientos necesarios para soportar los nuevos casos funcionales: finalización de campañas vencidas, métricas de campañas publicitarias, estados de usuario, moderación de productos, cancelación de pedidos antes del despacho, conciliación de pagos, generación de notificaciones relevantes, consulta de pedidos por vendedor y selección de direcciones de entrega.
+
+## Resultados obtenidos
+
+Se implementaron pruebas unitarias para los RF solicitados:
+
+RF-31: 2 pruebas.
+RF-32: 2 prueba.
+RF-33: 2 pruebas.
+RF-34: 2 pruebas.
+RF-36: 2 pruebas.
+RF-39: 2 pruebas.
+RF-40: 2 prueba.
+RF-41: 2 prueba.
+RF-42: 2 pruebas.
+La suite completa fue ejecutada con resultado exitoso:
+
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
+
+## Observaciones
+
+Se recomienda complementar estas pruebas unitarias con pruebas de integración para validar los flujos completos entre checkout, pagos, notificaciones, pedidos, campañas y direcciones de entrega.

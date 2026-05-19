@@ -237,3 +237,29 @@ Una interfaz clara mejora la usabilidad del sistema, facilita la navegación del
 
 ### Observaciones
 Se concluyó que la interfaz no solo debía ser funcional, sino también clara, intuitiva y coherente con el comportamiento esperado de un marketplace real.
+
+
+## Entrada 12
+
+Fecha: Mayo 2026
+Tipo de entrada: Implementación de pruebas unitarias y soporte funcional
+
+## Descripción de la actividad
+
+Se implementaron pruebas unitarias para nuevos requisitos funcionales del sistema, correspondientes a RF-31, RF-32, RF-33, RF-34, RF-36, RF-39, RF-40, RF-41 y RF-42.
+
+Las pruebas se organizaron por requisito para facilitar su revisión. También se agregó la lógica necesaria para que estos casos pudieran ser evaluados correctamente, incluyendo campañas vencidas, métricas de campañas, suspensión de usuarios, moderación de productos, cancelación de pedidos, consulta de pagos, notificaciones, pedidos del vendedor y direcciones de entrega en checkout.
+
+## Justificación técnica
+
+Estas pruebas permiten validar que cada funcionalidad cumpla su comportamiento esperado de forma aislada. Esto ayuda a detectar errores antes de integrar los módulos y reduce el riesgo de afectar procesos importantes como pagos, pedidos, notificaciones y gestión de usuarios.
+
+## Resultados obtenidos
+
+- Pruebas creadas para RF-31, RF-32, RF-33, RF-34, RF-36, RF-39, RF-40, RF-41 y RF-42.
+- Se implementó soporte funcional para campañas, usuarios, productos, pedidos, pagos, notificaciones y direcciones de entrega.
+- La ejecución de pruebas fue exitosa.
+- 
+## Observaciones
+
+Se concluyó que las pruebas unitarias son necesarias para comprobar el comportamiento interno del sistema y dejar una base más estable para futuras pruebas de integración.

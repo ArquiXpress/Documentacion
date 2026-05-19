@@ -562,12 +562,6 @@ La jornada permitió alinear al equipo frente a las correcciones necesarias y or
 =====================================================================================================================================================
 =====================================================================================================================================================
 
-
-=====================================================================================================================================================
-=====================================================================================================================================================
-=====================================================================================================================================================
-
-
 ## Entrada de bitácora 
 
 **Fecha:** Martes 21 de abril de 2026  
@@ -599,3 +593,81 @@ Se priorizó la actualización de las bitácoras individuales en función de est
 ## Observaciones 
 
 Esta jornada marcó una transición importante en el proyecto, al mover el foco desde la definición y documentación de la arquitectura hacia su validación práctica. La retroalimentación recibida refuerza la necesidad de sustentar las decisiones arquitectónicas mediante pruebas concretas, lo cual aporta mayor solidez técnica y académica al desarrollo del sistema.
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+## Entrada de bitácora
+
+**Fecha:** Domingo 18 de mayo de 2026
+**Persona involucrada:** Todo el equipo
+**Tipo de entrada:** Implementación de pruebas unitarias
+
+## Descripción de la actividad
+
+Durante esta jornada el equipo implementó pruebas unitarias para la totalidad de los
+requisitos funcionales del sistema, cubriendo los RF-01 al RF-30, RF-38 y RF-44.
+
+Las pruebas se organizaron por módulo funcional según la estructura definida en el SAD:
+
+- **Gestión de usuarios y control de acceso (RF-01 a RF-05):** se validaron los flujos
+  de registro, autenticación, recuperación de contraseña, gestión de perfil y control
+  de acceso basado en roles.
+- **Catálogo y descubrimiento de productos (RF-06 a RF-08):** se probaron el listado
+  de productos, búsqueda con filtros y visualización del detalle de producto.
+- **Favoritos y carrito de compras (RF-09 a RF-10):** se verificó la gestión de
+  favoritos y las operaciones del carrito, incluyendo agregar, eliminar, modificar
+  cantidades y calcular totales.
+- **Checkout, pagos y gestión de pedidos (RF-11 a RF-16, RF-38):** se cubrieron el
+  flujo de checkout, creación de pedidos, integración con la pasarela simulada, manejo
+  de estados de pago, reintento de pago, historial de compras y prevención de cobros
+  duplicados mediante control de idempotencia.
+- **Gestión de stock y disponibilidad (RF-17 a RF-19):** se probaron la actualización
+  de stock por parte del vendedor, la validación de disponibilidad previa al checkout y
+  la lógica de reserva y liberación de inventario.
+- **Envío y rastreo de pedido (RF-20, RF-44):** se validaron la consulta de estado de
+  pedido por parte del comprador y la actualización de estados de envío por parte del
+  usuario logístico respetando las transiciones autorizadas.
+- **Funcionalidades para vendedores (RF-21 a RF-22):** se verificaron la creación y
+  gestión de publicaciones de productos.
+- **Promociones y campañas de descuento (RF-23 a RF-27):** se probaron la creación de
+  campañas, invitación a vendedores, aceptación/rechazo de invitaciones, configuración
+  de descuentos y aplicación/reversión de precios promocionales.
+- **Publicidad (RF-28 a RF-30):** se cubrieron la creación de campañas publicitarias,
+  el pago y activación de estas, y la visualización de productos patrocinados.
+
+Para cada RF se definieron escenarios de flujo principal, flujos alternativos y
+excepciones, según los casos de uso documentados en el SRS.
+
+## Justificación técnica
+
+La cobertura de pruebas unitarias sobre todos los módulos funcionales es esencial para
+garantizar que cada componente del monolito modular cumple sus contratos internos de
+forma aislada, antes de la integración entre módulos. Dado que la arquitectura adoptada
+(ADR-05) establece alta cohesión y bajo acoplamiento entre dominios, las pruebas
+unitarias son la principal herramienta para detectar regresiones ante modificaciones en
+módulos como promociones, inventario o publicidad sin afectar checkout, catálogo o
+gestión de usuarios, tal como lo exige ASR-11.
+
+Asimismo, la cobertura de los RF transaccionales críticos (RF-11 a RF-14, RF-18, RF-19,
+RF-38) responde directamente a los ASR de mayor prioridad: ASR-01 (checkout
+consistente), ASR-03 (pago sin cobros dobles) y ASR-09 (integridad de stock), definidos
+en el SAD.
+
+## Resultados obtenidos
+
+- Pruebas unitarias implementadas y ejecutadas para RF-01 a RF-30, RF-38 y RF-44.
+- Cobertura validada sobre flujos principales, alternativos y de excepción en todos
+  los módulos funcionales.
+- Se detectaron y corrigieron inconsistencias menores en la lógica de reserva de stock
+  y en las transiciones de estado de envío durante la ejecución de las pruebas.
+- Base de pruebas establecida como insumo para las pruebas de integración en la
+  siguiente fase del proyecto.
+
+## Observaciones
+
+Se recomienda complementar estas pruebas unitarias con pruebas de integración entre
+módulos y pruebas de concurrencia, especialmente para los escenarios de sobreventa y
+doble cobro identificados como riesgos técnicos de alta prioridad en la sección 14 del
+SAD.

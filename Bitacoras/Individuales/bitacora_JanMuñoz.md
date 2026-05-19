@@ -201,3 +201,25 @@ Las restricciones técnicas y las decisiones arquitectónicas son conceptos dist
 
 ### Observaciones
 Se recomienda revisar las demás secciones del documento para asegurar que cada artefacto esté ubicado en el apartado que le corresponde, evitando mezclas conceptuales que puedan afectar la calidad de la documentación.
+
+---
+
+## Entrada 10
+
+- **Fecha:** Domingo 17 de mayo de 2026
+- **Persona involucrada:** Jan Marco Muñoz Pineda
+- **Tipo de entrada:** Implementación de pruebas unitarias
+
+### Descripción de la actividad
+Durante esta sesión se implementaron pruebas unitarias para tres módulos funcionales del sistema. Del módulo de Checkout, pagos y gestión de pedidos (sección 2.4 del SAD) se cubrieron los RF-11, RF-12, RF-13, RF-14 y RF-38, validando el flujo de confirmación de compra, creación de pedido con estado inicial, integración con la pasarela simulada, manejo de estados de pago y prevención de cobros duplicados mediante control de idempotencia. Del módulo de Gestión de stock y disponibilidad (sección 2.5) se cubrieron RF-18 y RF-19, verificando la validación de disponibilidad antes del checkout y la lógica de reserva y liberación de stock según el resultado del pago. Del módulo de Envío y rastreo de pedido (sección 2.6) se cubrieron RF-20 y RF-44, probando la consulta de estados de pedido por parte del comprador y la actualización de estados de envío por parte del usuario logístico respetando las transiciones autorizadas por el sistema.
+
+### Justificación técnica
+Los módulos cubiertos corresponden a los núcleos transaccional y logístico del sistema, directamente relacionados con los ASR de mayor prioridad: ASR-01 (checkout consistente), ASR-03 (pago sin cobros dobles), ASR-05 (tolerancia a fallo de pasarela), ASR-09 (integridad de stock) y ASR-17 (integridad de estados de envío). Dada la arquitectura de monolito modular adoptada (ADR-01, ADR-02, ADR-05), las pruebas unitarias son la primera línea de validación para garantizar que cada módulo cumple sus contratos internos antes de la integración, y para detectar regresiones al modificar lógica transaccional crítica sin afectar módulos vecinos.
+
+### Resultados obtenidos
+- Pruebas unitarias implementadas y ejecutadas exitosamente para RF-11, RF-12, RF-13, RF-14, RF-18, RF-19, RF-20, RF-38 y RF-44.
+- Cobertura validada sobre flujos principales (pago aprobado, reserva confirmada, estado actualizado), flujos alternativos (pago pendiente, liberación de stock) y excepciones (pago rechazado, transición de estado inválida, stock insuficiente).
+- Se detectaron y corrigieron inconsistencias menores en la lógica de reserva de stock (RF-19) durante escenarios de fallo de pago.
+
+### Observaciones
+Las pruebas implementadas sirven como base para las pruebas de integración de los flujos de checkout y logística en iteraciones posteriores. Se recomienda complementarlas con pruebas de concurrencia para los escenarios de sobreventa identificados en el riesgo técnico de alta prioridad del SAD (sección 14).
